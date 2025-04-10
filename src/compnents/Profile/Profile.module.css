@@ -1,0 +1,51 @@
+.cover {
+    margin: 20px 40px;
+    padding-top: 20px;
+    border: solid 2px black;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 10px;
+}
+.imgCover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+.username {
+    font-weight: 700;
+}
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightgray;
+    border-radius: 0 0 10px 10px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 132px;
+    height: 80px;
+    border-right: 1px solid grey;
+    border-top: 1px solid grey;
+}
+.item:last-child {
+    border-right: none;
+}
+.itemValue {
+    font-weight: 700;
+}

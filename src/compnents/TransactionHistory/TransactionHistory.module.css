@@ -1,0 +1,25 @@
+.table {
+    padding: 40px;
+    width: 400px;
+    height: 400px;
+}
+.thead tr:nth-child(2n+1) {
+    background-color: black;  
+    color: aliceblue; 
+}
+
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: solid 1px black;
+  }
+
+    tr:nth-child(2n) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:nth-child(2n+1) {
+    background-color: #e6e6e6;
+  }
+
+  

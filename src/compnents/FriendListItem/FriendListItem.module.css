@@ -1,0 +1,13 @@
+.name {
+    justify-self: center;
+    font-weight: 700;
+}
+.text {
+    justify-self: center;
+}
+.online {
+    color: green;
+}
+.offline {
+    color: red;
+}

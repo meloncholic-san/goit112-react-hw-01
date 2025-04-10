@@ -1,52 +1,25 @@
-// import AppBar from "../AppBar/AppBar";
-// import PilotList from "../PilotList/PilotList";
-// import officers from "../../officers.json";
-// import css from "./App.module.css";
-// import RainIcon from "../../assets/cloud-rain.svg";
-
-const ProfileSection = ({ title, children }) => {
-  return (
-    <section>
-      <h2>{title}</h2>
-      {children}
-    </section>
-  );
-};
-
-const StudentProfile = () => {
-  return (
-    <div>
-      <p>Профіль студента</p>
-      <button>Кнопка шось зробити</button>
-    </div>
-  );
-};
+import userData from "../../userData.json"
+import friends from "../../friends.json"
+import transactions from "../../transactions.json"
+import FriendList from "../FriendList/FriendList";
+import Profile from "../Profile/Profile";
+import TransationHistory from "../TransactionHistory/TransactionHistory";
 
 export default function App() {
   return (
     <>
-      <ProfileSection title="Рейтинг">
-        <StudentProfile />
-      </ProfileSection>
-
-      <ProfileSection
-        title="Що це за очки досвіду та рівні?
-"
-      >
-        <p>Список досвіду</p>
-      </ProfileSection>
-
-      <ProfileSection title="Як отримати більше очків досвіду?">
-        <h3>Вказівки</h3>
-      </ProfileSection>
-
-      {/* <RainIcon width="80" height="80" /> */}
-      {/* <h1 className={css.title}>Styling React Components</h1> */}
-
-      {/* <AppBar /> */}
-
-      {/* <h2>Active officers</h2>
-      <PilotList items={officers} /> */}
+      <Profile
+        username={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
+      <hr />
+       <FriendList friends={friends} />
+      <hr />
+       <TransationHistory items = {transactions} />
     </>
+    
   );
 }
